@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "capesmc",
+  "version": "${version}",
+  "name": "capesMC",
+  "description": "Design your own capes and banners (paint them or paste a code) and wear a fire, pearlescent or dark aura.",
+  "authors": ["capesMC"],
+  "license": "MIT",
+  "icon": "assets/capesmc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.capesmc.CapesMC"],
+    "client": ["dev.capesmc.client.CapesMCClient"]
+  },
+  "mixins": [
+    { "config": "capesmc.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "capesmc:custom_banner",
+      "functions": [{
+        "function": "minecraft:copy_components",
+        "source": "block_entity",
+        "include": ["minecraft:custom_data"]
+      }]
+    }]
+  }]
+}
